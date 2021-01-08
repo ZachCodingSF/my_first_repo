@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Document</title>
+    <style type="text/css">
+        span {
+            font-weight: bold;
+        }
+
+        body {
+        }
+
+        #fname {
+            background-color: orangered; 
+        }
+
+        .last-name {
+            font-size: x-large;
+        }
+
+        input[type="date"] {
+            background-color: hsl(180, 50%, 60%);
+        }
+
+        input[type] {
+            background-color: yellow;
+        }
+        
+        p span {
+            font-family: georgia;
+        }
+
+        form > label[for="fname"] {
+            font-size: x-small;
+        }
+    </style>
+</head>
+<body>
+    <h3>Appointments</h3>
+    <span>Another Span</span>
+    <label for="fname">Hello</label>
+    <form action="https://google.com" method="GET">
+        <div>
+            <label for="fname">Second first name</label>
+        </div>
+        <label for="fname">First name</label>
+        <input style="background-color: teal;" type="text" id="fname" name="first-name">
+        <br>
+        <label for="lname" class="last-name">Last name</label>
+        <input type="text" id="lname" name="last-name">
+        <br>
+        <label for="date">Appointment date</label>
+        <input type="date" id="date" name="date">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    <p>
+       <b>Hello World</b>
+       <br>
+       <span>How are you?</span>
+    </p>
+</body>
+</html>
