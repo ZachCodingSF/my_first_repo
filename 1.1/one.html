@@ -4,25 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
+    <style>
+         #blue {
+             font-weight: bold;
+             text-decoration: underline;
+         }
+
+         #table{
+             border-style: groove;
+             border-width: thin;
+             padding: .5%;
+         }
+    </style>
 </head>
+<div>
+    <span id="blue">Welcome to my quiz</span>
+    <br>
+    <span>This quiz is going to collect input about your favorite countries and send that data to Google.com. </span>
+</div>
+<br>
 <body>
-    <div>
-        <p>
-            <span>Hello World</span>
-        </p>
-        <p>
-            <a href="https://calendar.google.com/calendar/u/0/r?pli=1">yoyoyo</a>
-        </p>
-    </div>
-    <div>
-        <form action="zach.portfolio.com" method="GET">
-            <input type="text" name="username">
+    <form action="https://google.com" method="GET" id="form">
+        <div id="table">
+            <label for="asia">- Favorite country in Asia?</label>
+            <input type="text" id="asia" name="asia-text">
             <br>
-            <input type="password" name="password">
             <br>
-            <textarea></textarea>
-            <input type="submit" value="submit">
-        </form>
-    </div>
+            <label for="america">- Favorite country in America?</label>
+            <input type="text" id="america" name="america-text">
+            <br>
+            <br>
+            <label for="europe">- Favorite country in Europe?</label>
+            <input type="text" id="europe" name="europe-text">
+        </div>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
